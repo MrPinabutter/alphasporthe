@@ -6,30 +6,35 @@ import Logo from "../public/logo.png";
 const Home: NextPage = () => {
   const camisas = [
     {
+      id: 1,
       name: "Camisa 1",
       image:
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
     {
+      id: 2,
       name: "Camisa 2",
       image:
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
     {
+      id: 3,
       name: "Camisa 3",
       image:
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
     {
+      id: 4,
       name: "Camisa 1",
       image:
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
     {
+      id: 5,
       name: "Camisa 2",
       image:
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
@@ -85,6 +90,7 @@ const Home: NextPage = () => {
           <div className="flex-none w-full flex-wrap flex gap-4 overflow-auto scrollbar-hide">
             {camisas.map((comment) => (
               <Card
+                key={comment.id}
                 name={comment.name}
                 image={comment.image}
                 price={comment.price}
