@@ -132,7 +132,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = (props: CardProps) => {
   return (
-    <div className="flex-none w-40 p-2 bg-white bg-opacity-50 rounded-lg shadow-lg">
+    <div className="flex-none w-36 p-2 bg-white bg-opacity-50 rounded-lg shadow-lg">
       <img src={props.image} alt={props.name} className="w-full rounded" />
       <h1 className="font-semibold text-black text-lg mt-1">{props.name}</h1>
       <h1 className="font-semibold text-black text-2xl font-['Poppins']">
