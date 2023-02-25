@@ -40,6 +40,27 @@ const Home: NextPage = () => {
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
+    {
+      id: 6,
+      name: "Camisa 2",
+      image:
+        "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
+      price: 100,
+    },
+    {
+      id: 7,
+      name: "Camisa 2",
+      image:
+        "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
+      price: 100,
+    },
+    {
+      id: 8,
+      name: "Camisa 2",
+      image:
+        "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
+      price: 100,
+    },
   ];
 
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -111,7 +132,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = (props: CardProps) => {
   return (
-    <div className="flex-none w-48 p-4 bg-white bg-opacity-50 rounded-lg shadow-lg">
+    <div className="flex-none w-40 p-2 bg-white bg-opacity-50 rounded-lg shadow-lg">
       <img src={props.image} alt={props.name} className="w-full rounded" />
       <h1 className="font-semibold text-black text-lg mt-1">{props.name}</h1>
       <h1 className="font-semibold text-black text-2xl font-['Poppins']">
@@ -119,8 +140,8 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
         {props.price}
       </h1>
 
-      <button className="font-['Poppins'] mt-2 text-md w-full font-bold transition-all rounded-md bg-cyan-700 hover:bg-cyan-900 text-white px-3 py-2">
-        Add to cart
+      <button className="font-['Poppins'] mt-2 text-md w-full font-semibold transition-all rounded-md bg-cyan-700 hover:bg-cyan-900 text-white px-3 py-2">
+        Comprar
       </button>
     </div>
   );

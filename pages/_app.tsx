@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <>
+    <main className="overflow-hidden relative">
       <div
         id="blob"
         ref={blobRef}
@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </main>
   );
 }
 
