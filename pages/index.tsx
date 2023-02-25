@@ -54,13 +54,6 @@ const Home: NextPage = () => {
         "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
       price: 100,
     },
-    {
-      id: 8,
-      name: "Camisa 2",
-      image:
-        "https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000",
-      price: 100,
-    },
   ];
 
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -103,6 +96,23 @@ const Home: NextPage = () => {
         </h1>
       </header>
 
+      <section className="flex w-full justify-center">
+        <section className="w-full p-4 flex flex-col gap-4 md:max-w-7xl">
+          <h1 className="text-white font-semibold font-['Poppins'] text-xl">
+            Camisas de time
+          </h1>
+          <div className="flex-none w-full flex-wrap flex gap-4 overflow-auto scrollbar-hide">
+            {camisas.map((comment) => (
+              <Card
+                key={comment.id}
+                name={comment.name}
+                image={comment.image}
+                price={comment.price}
+              />
+            ))}
+          </div>
+        </section>
+      </section>
       <section className="flex w-full justify-center">
         <section className="w-full p-4 flex flex-col gap-4 md:max-w-7xl">
           <h1 className="text-white font-semibold font-['Poppins'] text-xl">
